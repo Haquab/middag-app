@@ -7,14 +7,8 @@ if ("serviceWorker" in navigator) {
 // localStorage tar bare imot tekst, så bruk JSON.stringify/parse
 // for lister og objekter.
 
-function hentKjoleskap() {
-  const data = localStorage.getItem("kjoleskap");
-  return data ? JSON.parse(data) : [];
+function test() {
+  return 0;
 }
 
-function lagreKjoleskap(liste) {
-  localStorage.setItem("kjoleskap", JSON.stringify(liste));
-}
 
-// Bare et eksempel du kan fjerne:
-console.log("Innhold i kjøleskapet:", hentKjoleskap());

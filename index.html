@@ -11,18 +11,51 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <link rel="apple-touch-icon" href="icon-192.png" />
 
+
+  
   <style>
     body {
       font-family: -apple-system, sans-serif;
       margin: 0;
       padding: 1.5rem;
-      background: #f5f5f5;
+      background: #2e59be;
     }
+
     h1 {
       font-size: 1.4rem;
     }
+
+    .bunnmeny {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-around;
+      background: #1f3b7d;
+      padding: 0.8rem 0;
+      padding-bottom: calc(0.8rem + env(safe-area-inset-bottom));
+    }
+
+    .bunnmeny a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    
   </style>
+
+  
 </head>
+
+<nav class="bunnmeny">
+  <a href="index.html"></a>
+  <a href="oppskrifter.html"></a>
+  <a href="handleliste.html"></a>
+</nav>
+
 <body>
   <h1>Hva er ikke i kjøleskapet?</h1>
 
@@ -31,4 +64,7 @@
 
   <script src="app.js"></script>
 </body>
+
+
+
 </html>
